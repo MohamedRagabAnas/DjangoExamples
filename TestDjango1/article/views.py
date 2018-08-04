@@ -1,0 +1,14 @@
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+from django.shortcuts import render_to_response
+from django.shortcuts import render
+from article.models import Article
+
+# Create your views here.
+
+def articles(request):
+	return render_to_response('articles.html', {'articles':Article.objects.all()})
+
+
+def article(request,article_id=1):
+	return render_to_response('article.html', {'article':Article.objects.get(id=article_id)})
