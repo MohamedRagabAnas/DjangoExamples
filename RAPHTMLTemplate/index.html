@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V18</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+
+	
+
+			<form class="contact100-form validate-form">
+
+			<div class="">
+				<h5>Reviewer-Paper Assignment tool (RPA tool):</h5>
+			  <p style=" text-align: justify; text-justify: inter-word;">
+			    Reviewer-Paper Assignment tool aims to make autumatic on-the-fly searching for paper reviewers according to its topics(Keywords) , filtering out Reviewers with (Confilic of Interests) COIs. 
+			  </p>
+			</div>
+
+				<span style="color:#da651e" class="contact100-form-title">
+					Paper info...
+				</span>
+
+
+				<div class="wrap-input100 validate-input" data-validate="Title is required">
+					<!--<label class="label-input100" for="name">Full name</label> -->
+					<input id="name" class="input100" type="text" name="name" placeholder="Paper Title..">
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="wrap-input100 validate-input" data-validate="Topics are required">
+					<!-- <label class="label-input100" for="email">Email Address</label> -->
+					<input id="topics" class="input100" type="text" name="topics" placeholder="Paper keywords seperated by commas..">
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="wrap-input100 validate-input" data-validate="Names are required">
+					<!-- <label class="label-input100" for="email">Email Address</label> -->
+					<input id="names" class="input100" type="text" name="names" placeholder="Author Names seperated by commas..">
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="wrap-input100 validate-input" data-validate = "Emails are required">
+					<!-- <label class="label-input100" for="email">Email Address</label> -->
+					<input id="emails" class="input100" type="text" name="emails" placeholder="Author emails seperated by commas..">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Affiliations are required">
+					<!-- <label class="label-input100" for="email">Email Address</label> -->
+					<input id="affs" class="input100" type="text" name="affs" placeholder="Author Affiliations seperated by commas..">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button style="background: #e3a511;" class="contact100-form-btn"  formaction="Results.html">
+						Search for Reviewers
+					</button>
+				</div>
+
+				<div class="contact100-form-social flex-c-m">
+					<a href="#" class="contact100-form-social-item flex-c-m bg1 m-r-5">
+						<i class="fa fa-facebook-f" aria-hidden="true"></i>
+					</a>
+
+					<a href="#" class="contact100-form-social-item flex-c-m bg2 m-r-5">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+
+					<a href="#" class="contact100-form-social-item flex-c-m bg3">
+						<i class="fa fa-youtube-play" aria-hidden="true"></i>
+					</a>
+				</div>
+			</form>
+
+			<div class="contact100-more flex-col-c-m" style="background-image: url('images/bg-01.jpg');">
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function(){
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+		})
+		$(".js-select2").each(function(){
+			$(this).on('select2:open', function (e){
+				$(this).parent().next().addClass('eff-focus-selection');
+			});
+		});
+		$(".js-select2").each(function(){
+			$(this).on('select2:close', function (e){
+				$(this).parent().next().removeClass('eff-focus-selection');
+			});
+		});
+
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+</body>
+</html>
